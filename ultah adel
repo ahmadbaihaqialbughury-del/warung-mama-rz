@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Selamat Ulang Tahun, Adelia Putri Alamanda Mahmud!</title>
+  <style>
+    :root{
+      --bg1: linear-gradient(135deg,#fff6f9 0%, #ffe6f0 30%, #fff8e6 60%, #e8fff0 100%);
+      --accent1: #ff6b6b;
+      --accent2: #ffb86b;
+      --accent3: #6be3ff;
+      --card: rgba(255,255,255,0.9);
+      --glass: rgba(255,255,255,0.5);
+    }
+    html,body{background:var(--bg1);display:flex;align-items:center;justify-content:center;padding:24px;position:relative;overflow:hidden;}
+    body{background:url("data:image/jpeg;base64,REPLACE_B64_HERE") center/cover no-repeat;display:flex;align-items:center;justify-content:center;padding:24px;}
+    .stage{width:100%;max-width:1000px;background:transparent;border-radius:20px;position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.12)}
+
+    /* confetti */
+    .confetti-piece{position:absolute;width:12px;height:18px;opacity:0;transform-origin:center;animation:fall 4s linear infinite;will-change:transform,opacity}
+    @keyframes fall{0%{transform:translateY(-10vh) rotate(0) scale(1);opacity:1}100%{transform:translateY(110vh) rotate(720deg) scale(.9);opacity:0}}
+
+    /* header */
+    header{padding:36px 36px 12px;display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:18px;flex-shrink:0;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+    .title{flex:1}
+    .title h1{margin:0;font-size:28px;letter-spacing:0.4px}
+    .title p{margin:6px 0 0;color:#3339;font-size:14px}
+
+    /* card */
+    .card{background:var(--card);margin:0 36px 36px;padding:28px;border-radius:16px;display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+    .left h2{margin:0 0 12px;font-size:22px}
+    .left p{margin:0 0 12px;line-height:1.6;color:#222}
+    .prayer{background:linear-gradient(180deg,#fff 0%,#fffefc 100%);padding:16px;border-radius:12px;border:1px solid rgba(0,0,0,0.04)}
+
+    /* right */
+    .right{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .cake{width:100%;height:220px;border-radius:12px;background:linear-gradient(180deg,#fff,#fff8f2);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 rgba(255,255,255,0.6)}
+    .cake .candles{font-size:42px}
+    .btns{display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+    .btn--share{background:linear-gradient(90deg,var(--accent3),#5bd6c0);color:#04323a}
+    .btn--play{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white}
+
+    footer{padding:18px 36px 36px;color:#222;font-size:14px}
+
+    /* sparkles */
+    .sparkle{position:absolute;width:10px;height:10px;border-radius:50%;filter:blur(.5px);opacity:.9}
+
+    /* responsive */
+    @media (max-width:880px){.card{grid-template-columns:1fr;}.avatar{width:92px;height:92px;font-size:22px}.right{order:2}.header-right{display:none}}
+  </style>
+</head>
+<body>
+  <div class="bg-overlay" style="position:absolute;inset:0;background:url('data:image/jpeg;base64,REPLACE_B64_HERE') center/cover no-repeat;opacity:0.25;z-index:0;"></div>
+  <div class="stage" role="main">
+    <!-- confetti pieces (JS will position and animate) -->
+    <div id="confetti"></div>
+
+    <!-- sparkles -->
+    <div class="sparkle" style="background: #ffd7e0;left:6%;top:8%;width:18px;height:18px;box-shadow:0 0 24px #ffd7e0"></div>
+    <div class="sparkle" style="background: #d6fff0;right:8%;top:18%;width:12px;height:12px;box-shadow:0 0 20px #d6fff0"></div>
+
+    <header>
+      <div class="avatar">APAM</div>
+      <div class="title">
+        <h1>Selamat Ulang Tahun ke-20, Adelia Putri Alamanda Mahmud 🎉</h1>
+        <p>Semoga hari ini penuh kejutan manis — dari teman, keluarga, dan Tuhan yang Maha Penyayang.</p>
+      </div>
+      <div class="header-right" style="text-align:right">
+        <small>20 tahun — momen istimewa ✨</small>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="ucapan">
+      <div class="left">
+        <h2 id="ucapan">Untuk Adelia, dari bestie lu</h2>
+        <p>kodel — di usia lu yang genap 20 ini, semoga setiap langkah lu diberkahi, dimudahkan, dan dilindungi. Semoga ilmu yang lu cari bermanfaat, rezeki lu dilapangkan, dan hati selalu dipenuhi ketenangan. Terima kasih sudah menjadi teman yang hangat, ceria, dan menginspirasi, mangat dah pokonya buat di umur lu yang segini kalo ada cobaan ya di cobain aja wwkwk.</p>
+
+        <div class="prayer">
+          <strong>Doa untuk mu</strong>
+          <p style="margin-top:8px;">Ya Allah, pada usia 20 tahun ini, limpahkanlah rahmat-Mu kepada Adelia. Karuniakan kepadanya kebaikan di dunia dan akhirat, kesehatan yang baik, keberkahan dalam setiap usaha, dan teman yang baik. Jauhkanlah dari segala mara bahaya, dan tunjukkanlah jalan yang lurus. Amin.</p>
+        </div>
+
+        <p style="margin-top:12px;"><em>Pesan pendek dari gw:</em> Tetap jadi diri lu yang berani bermimpi. Selamat ulang tahun, semoga semua doa dan cita-citamu dimudahkan.</p>
+      </div>
+
+      <aside class="right">
+        <div class="polaroid" style="background:white;padding:10px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.18);transform:rotate(-3deg);margin-bottom:14px;">
+            <img src="background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+ ... (masih panjang) ... ");
+">
+            <div style="text-align:center;font-size:14px;font-weight:600;margin-top:6px;color:#444;">Adelia • 20 Tahun</div>
+          </div>
+
+          <div class="cake" role="img" aria-label="Kue ulang tahun dekoratif">
+          <div style="font-size:14px;font-weight:700;opacity:.85">Happy 20th</div>
+          <div class="candles">🕯️🕯️🕯️🕯️🕯️</div>
+          <div style="margin-top:8px;font-size:12px;color:#3339">Adelia Putri Alamanda Mahmud</div>
+        </div>
+
+        <div class="btns">
+          <button class="btn btn--play" id="playSong">Mainkan Lagu 🎵</button>
+          
+        </div>
+      </aside>
+    </section>
+
+    <footer></footer>
+  </div>
+
+  
+
+  <script>
+    // create confetti pieces
+    const confettiContainer = document.getElementById('confetti');
+    const colors = ['#FF6B6B','#FFD93D','#6BE3FF','#A28BFF','#FF9AC2','#6BF5A8'];
+    for(let i=0;i<28;i++){
+      const el = document.createElement('div');
+      el.className='confetti-piece';
+      el.style.left = Math.random()*100 + '%';
+      el.style.background = colors[Math.floor(Math.random()*colors.length)];
+      el.style.transform = `translateY(${ -Math.random()*20 }vh) rotate(${Math.random()*360}deg)`;
+      el.style.animationDelay = (Math.random()*3)+'s';
+      el.style.width = (8 + Math.random()*12) + 'px';
+      el.style.height = (10 + Math.random()*18) + 'px';
+      confettiContainer.appendChild(el);
+    }
+
+    
+    });
+
+    // play Jamrud - Selamat Ulang Tahun (user harus menyediakan file mp3 bernama jamrud_selamat_ulang_tahun.mp3)
+    const audio = document.getElementById('song');
+    document.getElementById('playSong').addEventListener('click', ()=>{
+      window.open('https://www.youtube.com/watch?v=mAJa4SF_VVI&list=RDmAJa4SF_VVI&start_radio=1','_blank');
+    });
+    });
+  </script>
+</body>
+</html>
